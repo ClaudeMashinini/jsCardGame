@@ -1,6 +1,6 @@
 const cards = document.querySelectorAll('.gamecard');
 
-let hasFlippedCard = false;
+let hasFlippedCard = false; 
 let lockBoard = false;
 let firstCard, secondCard;
 
@@ -16,7 +16,7 @@ if (!hasFlippedCard) {
     return;
 } //carried out to determine the first card by checking if in the current pairing attempt, this is the first flip
 secondCard = this;//determines the second card by exiting the first card's criteria if statement
-checkForMatch();//called to determine the 
+checkForMatch();//called to determine the matching of the two selected(clicked) cards
 }
 
 function checkForMatch() {
