@@ -10,8 +10,8 @@ function flipCard() {
 	this.classList.add('flip'); 
 
 	if (!hasFlippedCard) {
-		hasFlippedCard = true;
-		firstCard = this;
+		hasFlippedCard = true, firstCard = this;
+		/*firstCard = this;*/
 		return;
 	}
 	secondCard = this;
