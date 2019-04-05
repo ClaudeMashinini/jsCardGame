@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Card Game</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <section>
+            <div id="container"><strong>LEVEL:</strong>
+                <input type="number" id="Selector" min="4" max="12" onchange="Stages()" step="2">
+                <button onclick='Stages()'>Submit</button> 
+                <select id="NumberOfLevels">
+                    <option id="starter" onclick="IncreaseCards(4)">novice</option>
+                    <option id="medium" onclick="IncreaseCards(6)">intermediate</option>
+                    <option id="expert" onclick ="IncreaseCards()">advanced</option>                    
+                </select>
+            </div>
+        </section>
+        <div id="body">
+            
+        </div>
+       
+        <script src="script.js"></script>
+    </body>
+</html>
